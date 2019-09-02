@@ -10,10 +10,12 @@ export class AppComponent {
   public title = 'Master en javascript!!!';
   public mostrar_videojuegos: boolean = true;
   public descripcion: String;
+  public config;
 
   constructor(){
     this.title = configuracion.titulo;
     this.descripcion = configuracion.descripcion;
+    this.config = configuracion;
   }
 
   ocultarVideojuegos(value){

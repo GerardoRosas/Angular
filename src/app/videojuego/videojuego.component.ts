@@ -18,11 +18,11 @@ export class VideojuegoComponent implements OnInit, DoCheck, OnDestroy{
     }
 
     ngOnInit(){ //Hook
-        console.log("OnInit ejecutado");
+        // console.log("OnInit ejecutado");
     }
 
     ngDoCheck(){ //Se ejecuta cad vez que se produce un cambio en el componento o en la aplicación de angular
-            console.log("Docheck ejecutado");
+            // console.log("Docheck ejecutado");
     }
 
     cambiarTitulo(){
@@ -30,7 +30,7 @@ export class VideojuegoComponent implements OnInit, DoCheck, OnDestroy{
     }
 
     ngOnDestroy(){
-        console.log("Ondestroy ejecutado");
+        // console.log("Ondestroy ejecutado");
     }
 
 }

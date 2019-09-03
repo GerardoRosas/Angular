@@ -11,17 +11,28 @@ export class ZapatillasComponent implements OnInit{
 
     public titulo: String; //Props que se va a exportar
     public zapatillas: Array<Zapatilla>;
+    public marcas: String[];
 
     constructor(){
+        this.marcas = new Array();
         this.zapatillas = [
             new Zapatilla('Snake', 1000, 'Blancos', true, 'Gucci'),
-            new Zapatilla('FXB', 150, 'Negros', true, 'Adidas'),
-            new Zapatilla('AirMax', 600, 'Azul', false, "Nike")
+            new Zapatilla('FXB', 60, 'Negros', true, 'Adidas'),
+            new Zapatilla('AirMax', 80, 'Azul', false, "Nike")
         ];
     }
     
     ngOnInit(){
         console.log(this.zapatillas);
     }
-    
+
+    getMarcas(){
+        this.zapatillas.forEach((zapatilla, index) => {
+            this.marcas.push(zapatilla.marca);
+            console.log(index);
+        });
+    }
+
+    ;
+        
 }

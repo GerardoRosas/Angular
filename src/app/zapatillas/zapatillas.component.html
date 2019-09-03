@@ -3,5 +3,9 @@
 <ul>
     <li *ngFor="let deportiva of zapatillas">{{deportiva.nombre}} - 
         <strong>{{deportiva.precio}}</strong>
+        <!--ngIF sirve para establcer una condicion cuando queramos algo-->
+        <span *ngIf="deportiva.precio <= 80"
+            [style.background]="deportiva.precio <= 80 ? 'green' : 'transparent'" 
+            [style.color]="deportiva.precio < 80 ? 'white' : 'black'"> !EN OFERTA!</span> <!--Condiciones para cambiar letra y fondo-->
     </li>
 </ul>

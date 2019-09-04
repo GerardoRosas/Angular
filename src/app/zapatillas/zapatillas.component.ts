@@ -12,8 +12,12 @@ export class ZapatillasComponent implements OnInit{
     public titulo: String; //Props que se va a exportar
     public zapatillas: Array<Zapatilla>;
     public marcas: String[];
+    public color: String;
+    public mi_marca: String;
+
 
     constructor(){
+        this.color = "yellow"
         this.titulo = "Se carga el componente Zapatillas";
         this.marcas = new Array();
         this.zapatillas = [
@@ -22,6 +26,7 @@ export class ZapatillasComponent implements OnInit{
             new Zapatilla('Spartan', 60, 'Morado', true, 'Adidas'),
             new Zapatilla('AirMax', 80, 'Azul', false, "Nike")
         ];
+        
     }
     
     ngOnInit(){
@@ -39,6 +44,18 @@ export class ZapatillasComponent implements OnInit{
             //console.log(index);
         });
         console.log(this.marcas);
+    }
+
+    getMarca(){
+        alert(this.mi_marca);
+    }
+
+    addMarca(){
+        this.marcas.push(this.mi_marca);
+    }
+
+    borrarMarca(indice){
+        delete this.marcas[indice];
     }
            
 }

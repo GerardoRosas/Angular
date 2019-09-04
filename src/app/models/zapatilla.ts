@@ -13,8 +13,7 @@ export class Zapatilla{
     //     this.precio = precio;
     //     this.stock = stock;
     // }
-    public titulo: String;
-
+    
     constructor(
         
         public nombre: String,

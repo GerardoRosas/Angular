@@ -22,10 +22,10 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule, 
-    routing
+    routing //importacion
   ],
   providers: [
-    appRoutingProviders
+    appRoutingProviders //importacion
   ],
   bootstrap: [AppComponent]
 })

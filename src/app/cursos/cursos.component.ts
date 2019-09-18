@@ -24,4 +24,9 @@ export class CursosComponent implements OnInit {
     });
   }
 
+  redirigir(){
+    //Redireccio al componente Zapatillas
+    this._router.navigate(['/zapatillas']);
+  }
+
 }

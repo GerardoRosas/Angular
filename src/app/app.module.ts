@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { routing, appRoutingProviders } from './app.routing';
+import { HttpClientModule } from '@angular/common/http';
 
 import { VideojuegoComponent } from './videojuego/videojuego.component';
 import { ZapatillasComponent } from './zapatillas/zapatillas.component';
@@ -24,7 +25,8 @@ import { ExternoComponent } from './externo/externo.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule, 
-    routing //importacion
+    routing, //importacion
+    HttpClientModule
   ],
   providers: [
     appRoutingProviders //importacion
